@@ -2,6 +2,7 @@ package com.bhanu.spring.model;
 
 public class Address {
 
+	private String city, state;
 	
 	
 	public Address() {
