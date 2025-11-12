@@ -13,8 +13,7 @@ public class Main {
 		Employee bean= ioc.getBean("e1", Employee.class);
 		System.out.println(bean);
 		
-		Employee bean2= ioc.getBean("e2", Employee.class);
-		System.out.println(bean2);
+		
 	}
 
 }
