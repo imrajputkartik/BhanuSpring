@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
+	<!-- bean definitions here -->
 
-
-<bean name="e1" class="com.bhanu.spring.model.Employee">
-
-<property name="name" value="ansh"/>
-<property name="gender" value="male"/>
-<property name="id" value="908"/>
+	<bean name="add" class="com.bhanu.spring.model.Address">
+		<property name="city" value="Noida" />
+		<property name="state" value="UP" />
+	</bean>
 
 
-</bean>
+	<bean name="e1" class="com.bhanu.spring.model.Employee" autowire="constructor" >
 
-<bean name="e2" class="com.bhanu.spring.model.Employee">
-<constructor-arg name="name" value="kartik"/>
-<constructor-arg name="gender" value="male"/>
-<constructor-arg name="id" value="67"/>
-</bean>
+		<constructor-arg name="name" value="ansh" />
+		<constructor-arg name="gender" value="male" />
+		<constructor-arg name="id" value="908" />
+
+	</bean>
+
 
 </beans>
