@@ -1,10 +1,18 @@
 
 package com.bhanu.spring.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+@Scope(value= "prototype")
 public class Employee {
 
 	private String name, gender;
 	private int id;
+	
+	@Autowired
 	private Address address;
 	
 	
